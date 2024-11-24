@@ -37,10 +37,10 @@
 ## 🖼️ **Tampilan**  
 
 ### Tampilan Desktop  
-![Tampilan Desktop](./images/desktop-preview.png)  
+![Tampilan Desktop](.assets/img/preview1.png)  
 
 ### Tampilan Mobile  
-![Tampilan Mobile](./images/mobile-preview.png)  
+![Tampilan Mobile](.assets/img/preview2.png)  
 
 ---
 
