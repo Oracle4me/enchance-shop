@@ -1,0 +1,575 @@
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-greys: #ededed;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+h4 {
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+body {
+  background-color: var(--bs-greys);
+}
+
+nav {
+  backdrop-filter: blur(8px);
+}
+
+.navbar-brand {
+  font-family: "Rock Salt", cursive;
+  font-style: normal;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--bs-dark);
+  transition: 0.3s color;
+}
+
+.icon-cart {
+  font-size: 10px;
+  position: relative;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.icon-cart img {
+  width: 25px;
+  height: 25px;
+}
+
+.icon-cart span {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: var(--bs-red);
+  border-radius: 50%;
+  right: -8px;
+  bottom: -8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  color: white;
+}
+
+.login-btn {
+  background-color: var(--bs-blue);
+  color: white;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.login-btn {
+  background-color: var(--bs-dark);
+}
+
+.login-btn:hover {
+  background-color: var(--bs-gray-dark);
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link {
+  color: var(--bs-gray);
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #000;
+}
+
+@media (min-width: 900px) {
+  .nav-link::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--bs-dark);
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-link:hover::before,
+  .nav-link.active::before {
+    width: 100%;
+    visibility: visible;
+  }
+}
+
+/* Hero */
+
+.content-area {
+  width: 100%;
+  height: 100vh;
+  padding: 80px 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-text {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 10px;
+}
+
+.content-text .text-fitur {
+  display: flex;
+  margin: 10px 0 15px;
+  gap: 30px;
+}
+
+.content-text .text-fitur a {
+  text-decoration: none;
+  color: var(--bs-gray-dark);
+  font-size: 17px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.content-text .text-fitur a:hover {
+  color: #000;
+}
+
+.content-text p {
+  font-family: "Rock Salt", cursive;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.1rem;
+  margin-top: 20px;
+}
+
+.hero-img img {
+  width: 340px;
+}
+
+.btn-wrap {
+  margin-top: 25px;
+}
+
+.btn-shop {
+  border: none;
+  background-color: #000;
+  border-radius: 40px;
+  padding: 8px 30px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 1.2px;
+  transition: 0.3s ease-in;
+}
+
+.btn-shop:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.up-to {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.up-to span {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Layanan/Services */
+
+.content-wrap {
+  padding: 70px 0 40px;
+  /* background-color: #000; */
+}
+
+.service-text-our {
+  display: flex;
+  align-items: center;
+  /* background-color: #000; */
+  justify-content: space-between;
+  margin-top: 1.9em;
+}
+
+.service-text-our span {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #eeee;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  padding: 20px 0;
+  margin-right: 20px;
+}
+
+.service-text-our span::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: #000;
+  left: -20%;
+}
+
+.customer-service {
+  margin: 25px 0 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.customer-service .service-wrap {
+  display: flex;
+}
+
+.customer-service .service-wrap img {
+  width: 80px;
+  height: 80px;
+}
+
+.customer-service .service-wrap .img2 {
+  width: 60px;
+  height: 60px;
+  margin-top: 5px;
+}
+
+.customer-service .service-wrap .service-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.customer-service .service-wrap .service-text h5 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 10px;
+  margin-top: 10px;
+}
+
+.customer-service .service-wrap .service-text p {
+  font-size: 14px;
+  font-weight: 400;
+}
+/* Layanan/Services */
+
+/* Kolekci/Collection */
+.collection-wrapper {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  padding: 70px 0 30px;
+}
+
+.collection {
+  margin-bottom: 20px;
+}
+
+.collection-item {
+  width: 300px;
+  height: 430px;
+  background-color: #f6f6f6;
+  margin-left: 10px;
+}
+
+.collection-wrapper .collection-text {
+  padding: 30px 0;
+}
+
+.collection-wrapper .collection-text span {
+  font-size: 35px;
+  font-weight: 300;
+  margin-left: 20px;
+  letter-spacing: 1.5px;
+}
+
+.collection-wrapper .collection-text span:nth-child(3) {
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.btn-wrap-col {
+  margin: 20px 0 0 20px;
+}
+
+.collection-btn {
+  position: relative;
+  border: none;
+  background-color: var(--bs-dark);
+  padding: 10px 20px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  transition: 0.3s ease;
+}
+
+.collection-btn::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #ffff;
+  left: 5px;
+  top: 5px;
+  transition: 0.2s ease-out;
+  z-index: -1;
+}
+
+.collection-btn:hover {
+  color: var(--bs-gray);
+}
+
+.collection-text p {
+  max-width: 25rem;
+  margin: 25px 0 0 20px;
+  font-size: 25px;
+  font-weight: 600;
+  text-shadow: 2px 0 3px rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.5px;
+}
+/* Koleksi/Collection */
+
+/* Terlaris/Top Seller */
+
+.produk {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.produk-kami {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.produk .produk-item-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.produk .produk-item-wrap p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.produk .produk-item-wrap .price {
+  line-height: 1px;
+}
+
+.produk .produk-item-wrap .price span {
+  font-weight: 700;
+}
+
+.produk .produk-item-wrap .price span:last-child {
+  position: relative;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.produk .produk-item-wrap .price span:last-child::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  top: 8px;
+  background-color: #000;
+}
+
+.produk .produk-item-wrap .produk-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 320px;
+  background-color: #f6f6f6;
+}
+
+.produk .produk-item img {
+  width: 310px;
+}
+
+.produk .produk-item .top-sell-img {
+  width: 230px;
+}
+
+.btn-wrapper {
+  margin-top: 18px;
+}
+
+.btn-wrapper .addCart,
+.addCart,
+.btn-wrapper .buy {
+  padding: 8px 9px;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  transition: 0.4s ease-out;
+}
+
+.btn-wrapper .addCart:hover,
+.addCart:hover,
+.btn-wrapper .buy:hover {
+  background-color: #000;
+  color: white;
+}
+
+/* Terlaris/Top Seller */
+
+/* Produk Kami */
+
+.filter-btn {
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+}
+
+.filter-btn button {
+  position: relative;
+  border: none;
+  margin-left: 10px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.filter-btn button::before {
+  position: absolute;
+  content: "";
+  background-color: #000;
+  width: 0;
+  height: 1.5px;
+  transform: translateX(-50%);
+  bottom: 0;
+  left: 50%;
+  transition: 0.3s ease-in-out;
+}
+
+.filter-btn button:hover::before {
+  width: 100%;
+}
+
+.produk-item-wrap.hide {
+  display: none;
+}
+
+.produk-item-wrap .produk-item .img-jacket {
+  width: 230px;
+}
+
+/* Produk Kami */
+
+/* Promo */
+
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 250px;
+  grid-auto-flow: dense;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.grid-gallery .grid-item {
+  position: relative;
+  background-color: #ffff;
+  overflow: hidden;
+}
+
+.grid-gallery .grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.grid-gallery .grid-item:hover img {
+  transform: scale(1.1);
+}
+
+.grid-gallery .grid-item a {
+  cursor: zoom-in;
+}
+.grid-gallery .grid-item:nth-child(3n - 2) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+@media (max-width: 768px) {
+  .grid-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+  }
+
+  .grid-gallery .grid-item:nth-child(3n - 2) {
+    grid-column: unset;
+    grid-row: unset;
+  }
+}
+/* Promo */

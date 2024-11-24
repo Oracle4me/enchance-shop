@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "nama_produk": "Jaket Covernat",
+    "imgSrc": "assets/img/top-sell/ts1r.png",
+    "type": "Jacket",
+    "deskripsi": "Jaket Covernat - Stylish and comfortable jacket perfect for all seasons.",
+    "harga": 98000,
+    "diskon": "100.000"
+  },
+  {
+    "id": 2,
+    "nama_produk": "Jaket Polyster Zipper",
+    "imgSrc": "assets/img/top-sell/ts2r.png",
+    "type": "Jacket",
+    "deskripsi": "Another Jacket - A durable and elegant jacket ideal for winter.",
+    "harga": 120000,
+    "diskon": "132.000"
+  },
+  {
+    "id": 3,
+    "nama_produk": "Hoodie Hitam",
+    "imgSrc": "assets/img/top-sell/ts3r.png",
+    "type": "Hoodie",
+    "deskripsi": "Another Jacket - A durable and elegant jacket ideal for winter.",
+    "harga": 110000,
+    "diskon": "128.000"
+  },
+  {
+    "id": 4,
+    "nama_produk": "Hoodie Putih",
+    "imgSrc": "assets/img/top-sell/ts4r.png",
+    "type": "Hoodie",
+    "deskripsi": "Another Jacket - A durable and elegant jacket ideal for winter.",
+    "harga": 104000,
+    "diskon": "125.000"
+  },
+  {
+    "id": 5,
+    "nama_produk": "Hoodie Hitam Zipper",
+    "imgSrc": "assets/img/top-sell/ts5r.png",
+    "type": "Hoodie",
+    "deskripsi": "Another Jacket - A durable and elegant jacket ideal for winter.",
+    "harga": 129000,
+    "diskon": "125.000"
+  },
+  {
+    "id": 6,
+    "nama_produk": "Jaket Windbreaker",
+    "imgSrc": "assets/img/top-sell/ts6r.png",
+    "type": "Jacket",
+    "deskripsi": "Another Jacket - A durable and elegant jacket ideal for winter.",
+    "harga": 158000,
+    "diskon": "167.000"
+  },
+  {
+    "id": 7,
+    "nama_produk": "Baju Hitam Polos",
+    "imgSrc": "assets/img/top-sell/th7r.png",
+    "type": "Baju",
+    "deskripsi": "Another Jacket - A durable and elegant jacket ideal for winter.",
+    "harga": 58000,
+    "diskon": "68.000"
+  },
+  {
+    "id": 8,
+    "nama_produk": "Baju Hitam Polos Panjang",
+    "imgSrc": "assets/img/top-sell/th8r.png",
+    "type": "Baju",
+    "deskripsi": "Another Jacket - A durable and elegant jacket ideal for winter.",
+    "harga": 78000,
+    "diskon": "88.000"
+  }
+]
