@@ -5,7 +5,7 @@
 ---
 
 ## 🔗 **Demo Langsung**  
-[https://oracle4me.github.io/enchance-shop/index.html](#)  
+[Kunjungi Enchance Shop](https://oracle4me.github.io/enchance-shop/)  
 
 ---
 
